@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="BarakasIcon.png" />
+    <title>Baraka's Palindrome Game</title>
+  </head>
+  <body>
+    <div id="timer"></div>
+    <main id="main">
+      <div id="flexContainer">
+        <section id="sectionOne">
+          <div class="contentOne">
+            <div class="header">
+              <h1>Is it a Palindrome?</h1>
+            </div>
+            <div class="palindromeContainer">
+              <div class="palindromeContent">
+                <div>
+                  <p>Enter in text to check for a palindrome:</p>
+                </div>
+                <div>
+                  <form action="">
+                    <input type="text" id="input" />
+                    <button type="submit" id="check">Check</button>
+                  </form>
+                  <p class="result">
+                    <span id="word"></span> <span id="isornot"></span>a
+                    palindrome
+                  </p>
+                </div>
+                <div id="results"></div>
+              </div>
+            </div>
+            <div class="definition">
+              <div class="bulb">💡</div>
+              <div>
+                <p class="paragraph">
+                  A <span>palindrome</span> is a word or sentence that's spelled
+                  the same way both forward and backward, ignoring punctuation,
+                  case, and spacing.
+                </p>
+              </div>
+            </div>
+            <div>
+              <button id="enterGame">Enter The Game</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Select level -->
+
+        <section id="sectionTwo">
+          <div id="selectLevelDiv">
+            <label for="userName">Your Name: </label>
+            <input type="text" id="userName" />
+            <div class="header">
+              <div id="topText">
+                <p>You are <span class="not">Not</span> Good at this🔥😭👀</p>
+              </div>
+              <h1 class="headingTwo">Select Level?</h1>
+            </div>
+            <div class="levels">
+              <button id="easyButton">Easy (Practice)</button>
+              <button id="hardButton">Hard</button>
+            </div>
+            <button id="backToStart">&lt; Back</button>
+          </div>
+
+          <!-- Easy level -->
+
+          <div id="easyLevel">
+            <p class="userText">Welcome</p>
+            <p>level: <span class="easyText">EASY</span></p>
+            <p>Points: <span id="points"></span></p>
+            <h1 class="headingTwo">Which is the Palindrome?</h1>
+            <button id="easyAnswerOne"></button>
+            <button id="easyAnswerTwo"></button>
+            <button id="backEasy">&lt; Back</button>
+          </div>
+
+          <!-- Hard Level -->
+
+          <div id="hardLevel">
+            <p class="userText">userName:</p>
+            <p>level: <span class="hardText">HARD</span></p>
+            <p>Points: <span id="points"></span></p>
+            <h1 class="headingTwo">Which is the Palindrome?</h1>
+            <button id="hardAnswerOne">Answer 1</button>
+            <button id="hardAnswerTwo">Answer 2</button>
+            <button id="backHard">&lt; Back</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="developerDiv">
+      <p>Designed and Coded By</p>
+      <p id="developer">Baraka Karuru</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

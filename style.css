@@ -1,0 +1,278 @@
+:root {
+  --background: rgb(10, 10, 35);
+  --green: rgb(0, 71, 27);
+  --purple: rgb(90, 1, 167);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: var(--background);
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  height: 99vh;
+}
+.header p {
+  text-align: center;
+  font-size: xx-large;
+}
+
+#timer {
+  width: 100%;
+  height: 1rem;
+  margin-top: -1.2rem;
+  background: linear-gradient(to top, white, white);
+  transition: margin 0.3s ease-in-out, width 6s ease-in-out; /* value to dynamically change in Js levels */
+  display: block;
+}
+
+main {
+  width: 28rem;
+  height: 27.5rem;
+  padding: 2rem;
+  margin: auto;
+  margin-top: 4rem;
+  border-radius: 5px;
+  color: white;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: height 0.5s ease-in-out, border 0.5s ease-in-out,
+    margin-top 0.5s ease-in-out;
+}
+h1 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2.8em;
+}
+
+.palindromeContainer {
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 -5px 10px blue;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.palindromeContent {
+  width: 80%;
+}
+.palindromeContent div p {
+  margin: 0 0 1.5rem 0;
+}
+input {
+  width: 70%;
+  height: 1.7rem;
+  font-size: larger;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid var(--purple);
+  margin-bottom: 1rem;
+}
+#check {
+  width: 25%;
+  height: 2.1rem;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--purple);
+  color: white;
+  transform: translateY(-2px);
+}
+#check:hover {
+  cursor: pointer;
+}
+
+.definition {
+  width: 93%;
+  height: fit-content;
+  background-color: var(--green);
+  border-radius: 15px;
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.bulb {
+  font-size: x-large;
+}
+.paragraph {
+  display: inline;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+}
+.paragraph span {
+  font-style: italic;
+  display: inline;
+}
+
+#topText {
+  display: none;
+}
+#enterGame {
+  margin-top: 1rem;
+  text-align: center;
+}
+#enterGame {
+  width: 100%;
+  font-size: larger;
+  padding: 0.3rem;
+  background-color: rgb(196, 196, 196);
+  border-color: rgb(196, 196, 196);
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+#enterGame:hover {
+  cursor: pointer;
+  background-color: white;
+  border-color: white;
+}
+
+.result {
+  text-align: center;
+  font-size: x-large;
+  display: none;
+}
+#word {
+  font-weight: bold;
+}
+
+#flexContainer {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+#sectionOne {
+  border: none;
+  width: 28rem;
+  margin-right: 3.8rem;
+}
+#sectionTwo {
+  width: 28rem;
+}
+.headingTwo {
+  font-size: 2.3rem;
+}
+
+#userName {
+  width: 75%;
+  font-size: larger;
+  display: inline-block;
+}
+label {
+  display: inline-block;
+  font-size: larger;
+}
+
+.levels button {
+  width: 100%;
+  font-size: larger;
+  padding: 0.6rem 0 0.6rem 0;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.levels button:hover {
+  cursor: pointer;
+}
+#easyButton {
+  color: green;
+}
+
+#easyLevel p,
+#hardLevel p {
+  margin: 0;
+}
+.easyText {
+  color: green;
+}
+.hardText {
+  color: red;
+}
+#easyLevel button,
+#hardLevel button {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: larger;
+  height: 2.3rem;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  border-color: white;
+}
+#easyLevel button:hover,
+#hardLevel button:hover,
+#backToStart {
+  cursor: pointer;
+}
+
+#easyLevel p,
+#hardLevel p {
+  display: inline-block;
+  width: 48.5%;
+}
+#easyLevel p:nth-of-type(2),
+#hardLevel p:nth-of-type(2) {
+  text-align: right;
+}
+#easyLevel p:nth-of-type(3),
+#hardLevel p:nth-of-type(3) {
+  text-align: center;
+  display: block;
+  width: 99%;
+}
+#points {
+  color: green;
+}
+#easyLevel {
+  display: none;
+}
+#hardLevel {
+  display: none;
+}
+
+#easyLevel #backEasy,
+#hardLevel #backHard {
+  width: fit-content;
+  font-size: small;
+  padding: none;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.gotAnswer {
+  border-color: green !important;
+}
+
+.failedAnswer {
+  border-color: red !important;
+}
+
+#backToStart {
+  width: fit-content;
+  font-size: small;
+  border: none;
+  background: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-bottom: 1px solid white;
+}
+
+#developerDiv {
+  text-align: center;
+  color: white;
+}
+#developer {
+  color: rgb(0, 255, 0);
+}
