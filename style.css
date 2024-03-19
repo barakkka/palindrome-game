@@ -31,6 +31,7 @@ main {
   width: 28rem;
   height: 27.5rem;
   padding: 2rem;
+  border: 5px solid lime !important;
   margin: auto;
   margin-top: 4rem;
   border-radius: 5px;
@@ -38,7 +39,7 @@ main {
   overflow: hidden;
   overflow-y: auto;
   transition: height 0.5s ease-in-out, border 0.5s ease-in-out,
-    margin-top 0.5s ease-in-out;
+    margin 0.5s ease-in-out, transform 1s ease-in-out;
 }
 h1 {
   text-align: center;
@@ -277,5 +278,10 @@ label {
   color: rgb(0, 255, 0);
 }
 
+@media screen and (width <= 650px) {
+  #main {
+    transform: scale(0.8);
+  }
+}
 
 /* ---looking clean---- */
